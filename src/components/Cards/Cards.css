@@ -1,0 +1,65 @@
+.Limit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 80px;
+    max-width: 1000px; 
+    margin: 0 auto; 
+  }
+  .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 80px;
+    max-width: 1000px; 
+    margin: 0 auto; 
+    width: 50%;
+    
+       
+  }
+  .btn{
+    display: flex;
+    flex-basis: calc(33.33% - 20px);
+    border: 1px solid #767575;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s; 
+    cursor: pointer;
+  }
+  
+  .Limit > div {
+    flex-basis: calc(33.33% - 20px);
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s; 
+    cursor: pointer;
+  }
+  
+ 
+  .btn:hover, .Limit > div:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  
+  
+  @media (max-width: 1000px) {
+    .Limit > div {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  
+  .Limit > div:nth-child(4),
+  .Limit > div:nth-child(5) {
+    flex-basis: calc(50% - 20px); 
+  }
